@@ -9,7 +9,8 @@
     "lint": "eslint . --ext .ts",
     "dev": "npm run lint && rollup -c",
     "build:nolint": "NODE_ENV=production rollup -c",
-    "build": "set NODE_ENV=production npm run lint && rollup -c",
+    "build": "NODE_ENV=production npm run lint && rollup -c",
+    "build-win": "set NODE_ENV=production npm run lint && rollup -c",
     "test": "jest",
     "test:watch": "yarn test -- --watch"
   },
