@@ -1,10 +1,10 @@
 {
-  "id": "react-starter",
-  "name": "React Starter",
-  "description": "Obsidian + ReactJS",
-  "version": "0.0.0",
-  "author": "Liam Cain",
-  "authorUrl": "https://github.com/liamcain/",
+  "id": "ob-keywords",
+  "name": "ob-keywords",
+  "description": "Obsidian keywords plugin",
+  "version": "1.0.3",
+  "author": "loki tang",
+  "authorUrl": "https://github.com/tcper/",
   "isDesktopOnly": true,
   "minAppVersion": "0.10.8"
 }
