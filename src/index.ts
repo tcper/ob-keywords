@@ -25,7 +25,7 @@ class MyReactView extends ItemView {
   }
 
   getIcon(): string {
-    return "calendar-with-checkmark";
+    return "plug-2";
   }
 
   async onOpen(): Promise<void> {
