@@ -2,7 +2,7 @@ import * as React from "react";
 
 const OB_KEYWORD_KEY = 'ob_keyowrd_key'
 
-export default function KeywordView({insert}): JSX.Element {
+export default function KeywordView({insert}: {insert: (text: string) => void}): JSX.Element {
   const [value, setValue] = React.useState('');
   const [keywords, setKeywords] = React.useState([]);
   React.useEffect(() => {
