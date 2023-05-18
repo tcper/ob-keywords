@@ -1,4 +1,4 @@
-import { MarkdownView, Editor, ItemView, Plugin, WorkspaceLeaf } from "obsidian";
+import { MarkdownView, ItemView, Plugin, WorkspaceLeaf } from "obsidian";
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -47,11 +47,19 @@ export default class ReactStarterPlugin extends Plugin {
         const app = this.app;
         function insertText(text: string) {
           if (text.length === 0 || text==null) return
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           app.commands.executeCommandById("editor:focus")
           const markdownView = app.workspace.getActiveViewOfType(MarkdownView)
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           const cursor = markdownView.editor.getCursor('from')
-          console.log(cursor);
+          // console.log(cursor);
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           markdownView.editor.replaceRange(text, cursor, cursor)
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           markdownView.editor.setCursor({...cursor, ch: cursor.ch + text.length})
         }
         this.view = new MyReactView(leaf)

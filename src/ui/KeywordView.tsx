@@ -43,6 +43,7 @@ export default function KeywordView({insert}): JSX.Element {
             }
           }}
         />
+        &nbsp;
         <button onClick={() => {
           appendHandler();
         }}>确定</button>
