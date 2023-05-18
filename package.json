@@ -1,15 +1,15 @@
 {
-  "name": "obsidian-react-starter",
-  "version": "0.0.0",
-  "description": "Obsidian + ReactJS",
-  "author": "liamcain",
+  "name": "ob-keywords",
+  "version": "0.0.1",
+  "description": "Obsidian Keywords plugin",
+  "author": "loki-tang",
   "main": "main.js",
   "license": "MIT",
   "scripts": {
     "lint": "eslint . --ext .ts",
     "dev": "npm run lint && rollup -c",
     "build:nolint": "NODE_ENV=production rollup -c",
-    "build": "NODE_ENV=production npm run lint && rollup -c",
+    "build": "set NODE_ENV=production npm run lint && rollup -c",
     "test": "jest",
     "test:watch": "yarn test -- --watch"
   },
