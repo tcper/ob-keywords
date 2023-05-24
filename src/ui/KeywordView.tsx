@@ -30,7 +30,7 @@ export default function KeywordView({insert}: {insert: (text: string) => void}):
 
   return (
     <>
-      <div className="DiceRoller__container">
+      <div className="container">
         <input
           style={{
             width: '50%'

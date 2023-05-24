@@ -6,9 +6,9 @@ import KeywordView from "./ui/KeywordView";
 
 
 
-const VIEW_TYPE = "react-view";
+const VIEW_TYPE = "keywords-view";
 
-class MyReactView extends ItemView {
+class KeywordView extends ItemView {
   private reactComponent: React.ReactElement;
   private insertText:(text:string) => void;
 
@@ -37,8 +37,8 @@ class MyReactView extends ItemView {
   }
 }
 
-export default class ReactStarterPlugin extends Plugin {
-  private view: MyReactView;
+export default class KeywordPlugin extends Plugin {
+  private view: KeywordView;
 
   async onload(): Promise<void> {
     this.registerView(
@@ -62,7 +62,7 @@ export default class ReactStarterPlugin extends Plugin {
           // @ts-ignore
           markdownView.editor.setCursor({...cursor, ch: cursor.ch + text.length})
         }
-        this.view = new MyReactView(leaf)
+        this.view = new KeywordView(leaf)
         this.view.setInsert(insertText);
         return this.view;
       }
